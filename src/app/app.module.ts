@@ -7,7 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { SidePanelComponent } from './side-panel/side-panel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CdkStepperModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
